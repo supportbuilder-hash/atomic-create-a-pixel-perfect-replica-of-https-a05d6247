@@ -223,7 +223,10 @@ export default function HomePage() {
       {/* ── Hero ── */}
       <section className="relative min-h-[92vh] flex items-center bg-[var(--background)] pt-24 pb-20 md:pt-32 md:pb-28">
         {/* Mesh glow */}
-        <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 overflow-hidden"
+        >
           <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[600px] rounded-full bg-[var(--brand-accent)]/10 blur-[120px]" />
           <div className="absolute top-1/3 -right-40 w-[500px] h-[500px] rounded-full bg-violet-500/8 blur-[100px]" />
           <div className="absolute bottom-0 -left-20 w-[400px] h-[400px] rounded-full bg-blue-500/8 blur-[90px]" />
@@ -234,13 +237,18 @@ export default function HomePage() {
               backgroundImage:
                 "linear-gradient(var(--foreground) 1px, transparent 1px), linear-gradient(90deg, var(--foreground) 1px, transparent 1px)",
               backgroundSize: "60px 60px",
-            }} />
+            }}
+          />
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: copy */}
-            <motion.div variants={heroContainer} initial="hidden" animate="visible">
+            <motion.div
+              variants={heroContainer}
+              initial="hidden"
+              animate="visible"
+            >
               <motion.div variants={heroItem}>
                 <span className="inline-flex items-center gap-2 rounded-full border border-[var(--brand-accent)]/30 bg-[var(--brand-accent)]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[var(--brand-accent)] uppercase mb-6">
                   <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
@@ -248,7 +256,10 @@ export default function HomePage() {
                 </span>
               </motion.div>
 
-              <motion.h1 variants={heroItem} className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[var(--foreground)] leading-[1.08] text-balance mb-6">
+              <motion.h1
+                variants={heroItem}
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[var(--foreground)] leading-[1.08] text-balance mb-6"
+              >
                 {t("hero.headline1")}{" "}
                 <span className="text-[var(--brand-accent)]">
                   {t("hero.headline2")}
@@ -256,24 +267,46 @@ export default function HomePage() {
                 {t("hero.headline3")}
               </motion.h1>
 
-              <motion.p variants={heroItem} className="text-lg text-[var(--muted-foreground)] leading-relaxed max-w-xl mb-10 text-pretty">
+              <motion.p
+                variants={heroItem}
+                className="text-lg text-[var(--muted-foreground)] leading-relaxed max-w-xl mb-10 text-pretty"
+              >
                 {t("hero.subheadline")}
               </motion.p>
 
-              <motion.div variants={heroItem} className="flex flex-wrap gap-4">
-                <Link href="#cta" className="inline-flex items-center gap-2 rounded-xl bg-[var(--brand-accent)] px-7 py-3.5 text-sm font-semibold text-[var(--brand-accent-fg)] shadow-[0_0_24px_rgba(99,102,241,0.35)] hover:opacity-90 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]">
+              <motion.div
+                variants={heroItem}
+                className="flex flex-wrap gap-4"
+              >
+                <Link
+                  href="#cta"
+                  className="inline-flex items-center gap-2 rounded-xl bg-[var(--brand-accent)] px-7 py-3.5 text-sm font-semibold text-[var(--brand-accent-fg)] shadow-[0_0_24px_rgba(99,102,241,0.35)] hover:opacity-90 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]"
+                >
                   {t("hero.cta_primary")}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
-                <Link href="#case-studies" className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--card)] px-7 py-3.5 text-sm font-semibold text-[var(--foreground)] hover:border-[var(--brand-accent)]/50 hover:bg-[var(--brand-accent)]/5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]">
+                <Link
+                  href="#case-studies"
+                  className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--card)] px-7 py-3.5 text-sm font-semibold text-[var(--foreground)] hover:border-[var(--brand-accent)]/50 hover:bg-[var(--brand-accent)]/5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]"
+                >
                   {t("hero.cta_secondary")}
                 </Link>
               </motion.div>
 
               {/* Trust signals */}
-              <motion.div variants={heroItem} className="mt-12 flex flex-wrap items-center gap-6">
+              <motion.div
+                variants={heroItem}
+                className="mt-12 flex flex-wrap items-center gap-6"
+              >
                 <div className="flex -space-x-2">
-                  {[1, 2, 3, 4, 5].map((i) => (<img key={i} src={`/images/avatar-client-${i}.jpg`} alt={`Client ${i}`} className="h-9 w-9 rounded-full border-2 border-[var(--background)] object-cover" />))}
+                  {[1, 2, 3, 4, 5].map((i) => (
+                    <img
+                      key={i}
+                      src={`/images/avatar-client-${i}.jpg`}
+                      alt={`Client ${i}`}
+                      className="h-9 w-9 rounded-full border-2 border-[var(--background)] object-cover"
+                    />
+                  ))}
                 </div>
                 <div>
                   <div className="flex items-center gap-1 mb-0.5">
@@ -293,11 +326,24 @@ export default function HomePage() {
             </motion.div>
 
             {/* Right: visual */}
-            <motion.div initial={{ opacity: 0, scale: 0.94, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }} className="relative hidden lg:block">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.94, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
+              className="relative hidden lg:block"
+            >
               <div className="relative rounded-2xl overflow-hidden border border-[var(--border)] shadow-[0_24px_80px_-16px_rgba(0,0,0,0.5)]">
-                <img src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/f1b306d53a7e4faba8cde6cb89163248.jpg" alt="Datics AI platform dashboard" className="w-full h-auto object-cover" />
+                <img
+                  src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/f1b306d53a7e4faba8cde6cb89163248.jpg"
+                  alt="Datics AI platform dashboard"
+                  className="w-full h-auto object-cover"
+                />
                 {/* Floating stat card */}
-                <motion.div animate={{ y: [0, -8, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} className="absolute bottom-6 left-6 rounded-xl border border-[var(--border)] bg-[var(--card)]/90 backdrop-blur-md px-5 py-4 shadow-xl">
+                <motion.div
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute bottom-6 left-6 rounded-xl border border-[var(--border)] bg-[var(--card)]/90 backdrop-blur-md px-5 py-4 shadow-xl"
+                >
                   <div className="flex items-center gap-3">
                     <div className="h-9 w-9 rounded-lg bg-emerald-500/20 flex items-center justify-center">
                       <TrendingUp className="h-5 w-5 text-emerald-400" aria-hidden="true" />
@@ -309,7 +355,11 @@ export default function HomePage() {
                   </div>
                 </motion.div>
                 {/* Floating badge */}
-                <motion.div animate={{ y: [0, 6, 0] }} transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }} className="absolute top-6 right-6 rounded-xl border border-[var(--brand-accent)]/30 bg-[var(--brand-accent)]/15 backdrop-blur-md px-4 py-2.5">
+                <motion.div
+                  animate={{ y: [0, 6, 0] }}
+                  transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                  className="absolute top-6 right-6 rounded-xl border border-[var(--brand-accent)]/30 bg-[var(--brand-accent)]/15 backdrop-blur-md px-4 py-2.5"
+                >
                   <div className="flex items-center gap-2">
                     <Sparkles className="h-4 w-4 text-[var(--brand-accent)]" aria-hidden="true" />
                     <span className="text-xs font-semibold text-[var(--brand-accent)]">{t("hero.badge_float")}</span>
@@ -320,6 +370,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       {/* ── Logos ── */}
       <section className="border-y border-[var(--border)] bg-[var(--card)]/40 py-10">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -327,20 +378,38 @@ export default function HomePage() {
             {t("logos.label")}
           </p>
           <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-6">
-            {LOGOS.map((logo) => (<span key={logo} className="text-base font-bold text-[var(--muted-foreground)]/50 tracking-tight select-none">
-              {logo}
-            </span>))}
+            {LOGOS.map((logo) => (
+              <span
+                key={logo}
+                className="text-base font-bold text-[var(--muted-foreground)]/50 tracking-tight select-none"
+              >
+                {logo}
+              </span>
+            ))}
           </div>
         </div>
       </section>
+
       {/* ── Stats ── */}
       <Reveal>
         <section className="py-20 md:py-24 bg-[var(--background)]">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              className="grid grid-cols-2 lg:grid-cols-4 gap-8"
+            >
               {STATS.map((stat, i) => (
-                <motion.div key={stat.label} variants={fadeInUp} className="text-center">
-                  <p className="text-4xl md:text-5xl font-bold text-[var(--foreground)] tracking-tight mb-2">{i === 0 ? "200+" : stat.value}</p>
+                <motion.div
+                  key={stat.label}
+                  variants={fadeInUp}
+                  className="text-center"
+                >
+                  <p className="text-4xl md:text-5xl font-bold text-[var(--foreground)] tracking-tight mb-2">
+                    {stat.value}
+                  </p>
                   <p className="text-sm text-[var(--muted-foreground)]">{stat.label}</p>
                 </motion.div>
               ))}
@@ -348,9 +417,13 @@ export default function HomePage() {
           </div>
         </section>
       </Reveal>
+
       {/* ── Services ── */}
       <Reveal>
-        <section id="services" className="py-24 md:py-32 bg-[var(--card)]/30">
+        <section
+          id="services"
+          className="py-24 md:py-32 bg-[var(--card)]/30"
+        >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="max-w-2xl mb-16">
               <span className="inline-block text-xs font-semibold tracking-widest text-[var(--brand-accent)] uppercase mb-4">
@@ -364,16 +437,28 @@ export default function HomePage() {
               </p>
             </div>
 
-            <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+            >
               {SERVICES.map((svc) => {
                 const Icon = svc.icon;
                 return (
-                  <motion.div key={svc.title} variants={scaleIn} whileHover={{ y: -4, transition: { duration: 0.2 } }} className="group relative rounded-2xl border border-[var(--border)] bg-[var(--card)] p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.12)] hover:border-[var(--brand-accent)]/40 hover:shadow-[0_8px_40px_-8px_rgba(99,102,241,0.2)] transition-all duration-300">
+                  <motion.div
+                    key={svc.title}
+                    variants={scaleIn}
+                    whileHover={{ y: -4, transition: { duration: 0.2 } }}
+                    className="group relative rounded-2xl border border-[var(--border)] bg-[var(--card)] p-7 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.12)] hover:border-[var(--brand-accent)]/40 hover:shadow-[0_8px_40px_-8px_rgba(99,102,241,0.2)] transition-all duration-300"
+                  >
                     <div
                       className={cn(
                         "mb-5 h-12 w-12 rounded-xl bg-gradient-to-br flex items-center justify-center",
                         svc.color
-                      )}>
+                      )}
+                    >
                       <Icon className={cn("h-6 w-6", svc.accent)} aria-hidden="true" />
                     </div>
                     <h3 className="text-base font-semibold text-[var(--foreground)] mb-3">
@@ -389,9 +474,13 @@ export default function HomePage() {
           </div>
         </section>
       </Reveal>
+
       {/* ── How It Works ── */}
       <Reveal>
-        <section id="how-it-works" className="py-24 md:py-32 bg-[var(--background)]">
+        <section
+          id="how-it-works"
+          className="py-24 md:py-32 bg-[var(--background)]"
+        >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-20">
               <span className="inline-block text-xs font-semibold tracking-widest text-[var(--brand-accent)] uppercase mb-4">
@@ -407,10 +496,23 @@ export default function HomePage() {
 
             <div className="relative">
               {/* Connector line */}
-              <div aria-hidden="true" className="absolute top-10 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--border)] to-transparent hidden lg:block" />
-              <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+              <div
+                aria-hidden="true"
+                className="absolute top-10 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--border)] to-transparent hidden lg:block"
+              />
+              <motion.div
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-80px" }}
+                className="grid md:grid-cols-2 lg:grid-cols-4 gap-10"
+              >
                 {HOW_IT_WORKS.map((step, i) => (
-                  <motion.div key={step.step} variants={fadeInUp} className="relative flex flex-col items-start">
+                  <motion.div
+                    key={step.step}
+                    variants={fadeInUp}
+                    className="relative flex flex-col items-start"
+                  >
                     <div className="relative z-10 mb-6 flex h-20 w-20 items-center justify-center rounded-2xl border border-[var(--brand-accent)]/30 bg-[var(--brand-accent)]/10 shadow-[0_0_24px_rgba(99,102,241,0.15)]">
                       <span className="text-2xl font-bold text-[var(--brand-accent)]">
                         {step.step}
@@ -429,9 +531,13 @@ export default function HomePage() {
           </div>
         </section>
       </Reveal>
+
       {/* ── Case Studies ── */}
       <Reveal>
-        <section id="case-studies" className="py-24 md:py-32 bg-[var(--card)]/30">
+        <section
+          id="case-studies"
+          className="py-24 md:py-32 bg-[var(--card)]/30"
+        >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="max-w-2xl mb-16">
               <span className="inline-block text-xs font-semibold tracking-widest text-[var(--brand-accent)] uppercase mb-4">
@@ -452,10 +558,15 @@ export default function HomePage() {
                     className={cn(
                       "grid lg:grid-cols-2 gap-0 rounded-2xl border border-[var(--border)] overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.12)]",
                       i % 2 === 1 && "lg:[&>*:first-child]:order-2"
-                    )}>
+                    )}
+                  >
                     {/* Image */}
                     <div className="relative h-64 lg:h-auto min-h-[280px] bg-[var(--card)]">
-                      <img src={cs.image} alt={cs.title} className="absolute inset-0 w-full h-full object-cover" />
+                      <img
+                        src={cs.image}
+                        alt={cs.title}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                       <span className="absolute top-5 left-5 rounded-full border border-[var(--brand-accent)]/40 bg-[var(--brand-accent)]/20 px-3 py-1 text-xs font-semibold text-[var(--brand-accent)]">
                         {cs.tag}
@@ -463,19 +574,23 @@ export default function HomePage() {
                     </div>
                     {/* Content */}
                     <div className="bg-[var(--card)] p-8 lg:p-12 flex flex-col justify-center">
-                      <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-4 text-balance">{i === 0 ? "Automated underwriting cut decision time by 90%" : cs.title}</h3>
+                      <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-4 text-balance">
+                        {cs.title}
+                      </h3>
                       <p className="text-sm text-[var(--muted-foreground)] leading-relaxed mb-8">
                         {cs.description}
                       </p>
                       <div className="grid grid-cols-3 gap-4">
-                        {cs.metrics.map((m) => (<div key={m.label}>
-                          <p className="text-2xl font-bold text-[var(--brand-accent)] mb-1">
-                            {m.value}
-                          </p>
-                          <p className="text-xs text-[var(--muted-foreground)] leading-snug">
-                            {m.label}
-                          </p>
-                        </div>))}
+                        {cs.metrics.map((m) => (
+                          <div key={m.label}>
+                            <p className="text-2xl font-bold text-[var(--brand-accent)] mb-1">
+                              {m.value}
+                            </p>
+                            <p className="text-xs text-[var(--muted-foreground)] leading-snug">
+                              {m.label}
+                            </p>
+                          </div>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -485,9 +600,13 @@ export default function HomePage() {
           </div>
         </section>
       </Reveal>
+
       {/* ── Team ── */}
       <Reveal>
-        <section id="team" className="py-24 md:py-32 bg-[var(--background)]">
+        <section
+          id="team"
+          className="py-24 md:py-32 bg-[var(--background)]"
+        >
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-16">
               <span className="inline-block text-xs font-semibold tracking-widest text-[var(--brand-accent)] uppercase mb-4">
@@ -501,28 +620,46 @@ export default function HomePage() {
               </p>
             </div>
 
-            <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-80px" }} className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {TEAM.map((member) => (<motion.div key={member.name} variants={scaleIn} whileHover={{ y: -4, transition: { duration: 0.2 } }} className="group rounded-2xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.12)] hover:border-[var(--brand-accent)]/40 transition-all duration-300">
-                <div className="relative h-56 bg-[var(--card)]">
-                  <img src={member.image} alt={member.name} className="w-full h-full object-cover object-top" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[var(--card)] via-transparent to-transparent" />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-semibold text-[var(--foreground)] mb-0.5">
-                    {member.name}
-                  </h3>
-                  <p className="text-xs font-medium text-[var(--brand-accent)] mb-3">
-                    {member.role}
-                  </p>
-                  <p className="text-xs text-[var(--muted-foreground)] leading-relaxed">
-                    {member.bio}
-                  </p>
-                </div>
-              </motion.div>))}
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+            >
+              {TEAM.map((member) => (
+                <motion.div
+                  key={member.name}
+                  variants={scaleIn}
+                  whileHover={{ y: -4, transition: { duration: 0.2 } }}
+                  className="group rounded-2xl border border-[var(--border)] bg-[var(--card)] overflow-hidden shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.12)] hover:border-[var(--brand-accent)]/40 transition-all duration-300"
+                >
+                  <div className="relative h-56 bg-[var(--card)]">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover object-top"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[var(--card)] via-transparent to-transparent" />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="font-semibold text-[var(--foreground)] mb-0.5">
+                      {member.name}
+                    </h3>
+                    <p className="text-xs font-medium text-[var(--brand-accent)] mb-3">
+                      {member.role}
+                    </p>
+                    <p className="text-xs text-[var(--muted-foreground)] leading-relaxed">
+                      {member.bio}
+                    </p>
+                  </div>
+                </motion.div>
+              ))}
             </motion.div>
           </div>
         </section>
       </Reveal>
+
       {/* ── Why Datics ── */}
       <Reveal>
         <section className="py-24 md:py-32 bg-[var(--brand-accent)]/5 border-y border-[var(--brand-accent)]/10">
@@ -538,7 +675,10 @@ export default function HomePage() {
                 <p className="text-[var(--muted-foreground)] leading-relaxed mb-10 text-pretty">
                   {t("why.body")}
                 </p>
-                <Link href="#cta" className="inline-flex items-center gap-2 rounded-xl bg-[var(--brand-accent)] px-7 py-3.5 text-sm font-semibold text-[var(--brand-accent-fg)] shadow-[0_0_24px_rgba(99,102,241,0.3)] hover:opacity-90 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]">
+                <Link
+                  href="#cta"
+                  className="inline-flex items-center gap-2 rounded-xl bg-[var(--brand-accent)] px-7 py-3.5 text-sm font-semibold text-[var(--brand-accent-fg)] shadow-[0_0_24px_rgba(99,102,241,0.3)] hover:opacity-90 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]"
+                >
                   {t("why.cta")}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
@@ -569,7 +709,10 @@ export default function HomePage() {
                 ].map((pt) => {
                   const Icon = pt.icon;
                   return (
-                    <div key={pt.title} className="flex gap-4 rounded-xl border border-[var(--border)] bg-[var(--card)] p-5 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+                    <div
+                      key={pt.title}
+                      className="flex gap-4 rounded-xl border border-[var(--border)] bg-[var(--card)] p-5 shadow-[0_1px_2px_rgba(0,0,0,0.04)]"
+                    >
                       <div className="flex-shrink-0 h-10 w-10 rounded-lg bg-[var(--brand-accent)]/15 flex items-center justify-center">
                         <Icon className="h-5 w-5 text-[var(--brand-accent)]" aria-hidden="true" />
                       </div>
@@ -589,9 +732,13 @@ export default function HomePage() {
           </div>
         </section>
       </Reveal>
+
       {/* ── FAQ ── */}
       <Reveal>
-        <section id="faq" className="py-24 md:py-32 bg-[var(--background)]">
+        <section
+          id="faq"
+          className="py-24 md:py-32 bg-[var(--background)]"
+        >
           <div className="mx-auto max-w-3xl px-6 lg:px-8">
             <div className="text-center mb-16">
               <span className="inline-block text-xs font-semibold tracking-widest text-[var(--brand-accent)] uppercase mb-4">
@@ -608,7 +755,11 @@ export default function HomePage() {
             <div className="divide-y divide-[var(--border)] rounded-2xl border border-[var(--border)] overflow-hidden">
               {FAQS.map((item, i) => (
                 <div key={item.q}>
-                  <button onClick={() => setOpenFaq(openFaq === i ? null : i)} className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left hover:bg-[var(--card)]/60 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[var(--brand-accent)]" aria-expanded={openFaq === i}>
+                  <button
+                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                    className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left hover:bg-[var(--card)]/60 transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[var(--brand-accent)]"
+                    aria-expanded={openFaq === i}
+                  >
                     <span className="text-sm font-medium text-[var(--foreground)]">
                       {item.q}
                     </span>
@@ -628,7 +779,8 @@ export default function HomePage() {
                         : { height: 0, opacity: 0 }
                     }
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className="overflow-hidden">
+                    className="overflow-hidden"
+                  >
                     <p className="px-6 pb-5 text-sm text-[var(--muted-foreground)] leading-relaxed">
                       {item.a}
                     </p>
@@ -639,13 +791,20 @@ export default function HomePage() {
           </div>
         </section>
       </Reveal>
+
       {/* ── CTA ── */}
       <Reveal>
-        <section id="cta" className="py-24 md:py-32 bg-[var(--card)]/30">
+        <section
+          id="cta"
+          className="py-24 md:py-32 bg-[var(--card)]/30"
+        >
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <div className="relative rounded-3xl border border-[var(--brand-accent)]/20 bg-gradient-to-br from-[var(--brand-accent)]/10 via-[var(--card)] to-[var(--card)] p-12 md:p-20 overflow-hidden shadow-[0_24px_80px_-16px_rgba(99,102,241,0.2)]">
               {/* Glow */}
-              <div aria-hidden="true" className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 w-[500px] h-[300px] rounded-full bg-[var(--brand-accent)]/15 blur-[80px]" />
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute -top-20 left-1/2 -translate-x-1/2 w-[500px] h-[300px] rounded-full bg-[var(--brand-accent)]/15 blur-[80px]"
+              />
               <div className="relative z-10">
                 <span className="inline-flex items-center gap-2 rounded-full border border-[var(--brand-accent)]/30 bg-[var(--brand-accent)]/10 px-4 py-1.5 text-xs font-semibold tracking-widest text-[var(--brand-accent)] uppercase mb-6">
                   <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
@@ -658,19 +817,27 @@ export default function HomePage() {
                   {t("cta.body")}
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <Link href="mailto:hello@datics.ai" className="inline-flex items-center gap-2 rounded-xl bg-[var(--brand-accent)] px-8 py-4 text-sm font-semibold text-[var(--brand-accent-fg)] shadow-[0_0_32px_rgba(99,102,241,0.4)] hover:opacity-90 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]">
+                  <Link
+                    href="mailto:hello@datics.ai"
+                    className="inline-flex items-center gap-2 rounded-xl bg-[var(--brand-accent)] px-8 py-4 text-sm font-semibold text-[var(--brand-accent-fg)] shadow-[0_0_32px_rgba(99,102,241,0.4)] hover:opacity-90 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]"
+                  >
                     {t("cta.primary")}
                     <ArrowRight className="h-4 w-4" aria-hidden="true" />
                   </Link>
-                  <Link href="https://calendly.com/datics" className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--card)] px-8 py-4 text-sm font-semibold text-[var(--foreground)] hover:border-[var(--brand-accent)]/50 hover:bg-[var(--brand-accent)]/5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]">
+                  <Link
+                    href="https://calendly.com/datics"
+                    className="inline-flex items-center gap-2 rounded-xl border border-[var(--border)] bg-[var(--card)] px-8 py-4 text-sm font-semibold text-[var(--foreground)] hover:border-[var(--brand-accent)]/50 hover:bg-[var(--brand-accent)]/5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--brand-accent)]"
+                  >
                     {t("cta.secondary")}
                   </Link>
                 </div>
                 <div className="mt-10 flex flex-wrap justify-center gap-6 text-xs text-[var(--muted-foreground)]">
-                  {[t("cta.trust1"), t("cta.trust2"), t("cta.trust3")].map((item) => (<span key={item} className="flex items-center gap-1.5">
-                    <Check className="h-3.5 w-3.5 text-emerald-400" aria-hidden="true" />
-                    {item}
-                  </span>))}
+                  {[t("cta.trust1"), t("cta.trust2"), t("cta.trust3")].map((item) => (
+                    <span key={item} className="flex items-center gap-1.5">
+                      <Check className="h-3.5 w-3.5 text-emerald-400" aria-hidden="true" />
+                      {item}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
