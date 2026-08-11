@@ -51,8 +51,7 @@ export default function Navbar() {
         isScrolled
           ? "bg-[var(--background)]/80 backdrop-blur-xl border-b border-[var(--border)] shadow-[0_4px_32px_rgba(124,58,237,0.12)]"
           : "bg-transparent"
-      }`}
-    >
+      }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
@@ -64,9 +63,7 @@ export default function Navbar() {
                 D
               </span>
             </div>
-            <span className="font-bold text-lg text-[var(--foreground)] tracking-tight">
-              Datics <span className="text-[var(--primary)]">AI</span>
-            </span>
+            <span className="font-bold text-lg text-[var(--foreground)] tracking-tight">DaticsAi.ai</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -74,34 +71,20 @@ export default function Navbar() {
             {navLinks.map((link) => {
               if (link.isCTA) {
                 return (
-                  <Link
-                    key={link.key}
-                    href={getLinkHref(link.href)}
-                    onClick={(e) => handleAnchorClick(e, link.href)}
-                    className="ml-4 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-white font-semibold text-sm hover:opacity-90 transition-all duration-300 shadow-[0_0_20px_rgba(124,58,237,0.4)] hover:shadow-[0_0_30px_rgba(124,58,237,0.6)] hover:scale-105"
-                  >
+                  <Link key={link.key} href={getLinkHref(link.href)} onClick={(e) => handleAnchorClick(e, link.href)} className="ml-4 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-white font-semibold text-sm hover:opacity-90 transition-all duration-300 shadow-[0_0_20px_rgba(124,58,237,0.4)] hover:shadow-[0_0_30px_rgba(124,58,237,0.6)] hover:scale-105">
                     {navT[link.key] ?? link.label}
                   </Link>
                 );
               }
               if (link.href === "/") {
                 return (
-                  <Link
-                    key={link.key}
-                    href="/"
-                    className="px-4 py-2 rounded-lg text-sm font-medium text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors duration-200"
-                  >
+                  <Link key={link.key} href="/" className="px-4 py-2 rounded-lg text-sm font-medium text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors duration-200">
                     {navT[link.key] ?? link.label}
                   </Link>
                 );
               }
               return (
-                <Link
-                  key={link.key}
-                  href={getLinkHref(link.href)}
-                  onClick={(e) => handleAnchorClick(e, link.href)}
-                  className="px-4 py-2 rounded-lg text-sm font-medium text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors duration-200"
-                >
+                <Link key={link.key} href={getLinkHref(link.href)} onClick={(e) => handleAnchorClick(e, link.href)} className="px-4 py-2 rounded-lg text-sm font-medium text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors duration-200">
                   {navT[link.key] ?? link.label}
                 </Link>
               );
@@ -109,47 +92,26 @@ export default function Navbar() {
           </nav>
 
           {/* Mobile toggle */}
-          <button
-            className="md:hidden p-2 rounded-lg text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-colors"
-            onClick={() => setIsMobileOpen((v) => !v)}
-            aria-label={isMobileOpen ? "Close menu" : "Open menu"}
-          >
+          <button className="md:hidden p-2 rounded-lg text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-colors" onClick={() => setIsMobileOpen((v) => !v)} aria-label={isMobileOpen ? "Close menu" : "Open menu"}>
             {isMobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
       </div>
-
       {/* Mobile menu */}
       <AnimatePresence>
         {isMobileOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="md:hidden overflow-hidden bg-[var(--background)]/95 backdrop-blur-xl border-b border-[var(--border)]"
-          >
+          <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.3, ease: "easeOut" }} className="md:hidden overflow-hidden bg-[var(--background)]/95 backdrop-blur-xl border-b border-[var(--border)]">
             <nav className="flex flex-col px-4 py-4 gap-1">
               {navLinks.map((link) => {
                 if (link.isCTA) {
                   return (
-                    <Link
-                      key={link.key}
-                      href={getLinkHref(link.href)}
-                      onClick={(e) => handleAnchorClick(e, link.href)}
-                      className="mt-2 px-5 py-3 rounded-xl bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-white font-semibold text-sm text-center hover:opacity-90 transition-all"
-                    >
+                    <Link key={link.key} href={getLinkHref(link.href)} onClick={(e) => handleAnchorClick(e, link.href)} className="mt-2 px-5 py-3 rounded-xl bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-white font-semibold text-sm text-center hover:opacity-90 transition-all">
                       {navT[link.key] ?? link.label}
                     </Link>
                   );
                 }
                 return (
-                  <Link
-                    key={link.key}
-                    href={getLinkHref(link.href)}
-                    onClick={(e) => handleAnchorClick(e, link.href)}
-                    className="px-4 py-3 rounded-lg text-sm font-medium text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-colors"
-                  >
+                  <Link key={link.key} href={getLinkHref(link.href)} onClick={(e) => handleAnchorClick(e, link.href)} className="px-4 py-3 rounded-lg text-sm font-medium text-[var(--muted-foreground)] hover:text-[var(--foreground)] hover:bg-[var(--card)] transition-colors">
                     {navT[link.key] ?? link.label}
                   </Link>
                 );
