@@ -1,0 +1,371 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "howItWorks": "Cómo funciona",
+    "caseStudies": "Casos de estudio",
+    "team": "Equipo",
+    "faq": "Preguntas frecuentes",
+    "getStarted": "Comenzar →"
+  },
+  "hero": {
+    "heading": "Creamos Software que Piensa",
+    "subheading": "Datics AI es tu socio de desarrollo impulsado por IA de extremo a extremo. Desde estrategia de producto inteligente hasta código listo para producción, convertimos ideas ambiciosas en software que escala — más rápido que cualquier agencia tradicional.",
+    "badge": "Desarrollo impulsado por IA",
+    "badge_float": "Análisis impulsado por IA",
+    "cta_primary": "Iniciar prueba gratuita",
+    "cta_secondary": "Ver demostración",
+    "headline1": "Transforma datos en",
+    "headline2": "información procesable",
+    "headline3": "al instante.",
+    "stat_label": "Información más rápida",
+    "stat_value": "10x",
+    "subheadline": "Datics utiliza IA avanzada para desbloquear patrones ocultos en tus datos, ayudándote a tomar decisiones más inteligentes en minutos, no en meses.",
+    "trust_label": "Confiado por"
+  },
+  "services": {
+    "eyebrow": "Capacidades",
+    "subheading": "Todo lo que necesitas para análisis de datos moderno."
+  },
+  "howItWorks": {
+    "heading": "De la idea al lanzamiento en cuatro sprints enfocados",
+    "body": "Nuestro proceso probado en batalla elimina la incertidumbre. Cada proyecto sigue el mismo ritmo disciplinado — transparente, iterativo y enfocado sin desviaciones en resultados."
+  },
+  "caseStudies": {
+    "heading": "Trabajo que habla por sí solo",
+    "body": "Una selección de proyectos recientes donde transformamos desafíos complejos en soluciones elegantes impulsadas por IA."
+  },
+  "team": {
+    "eyebrow": "Nuestro equipo",
+    "subheading": "Construido por expertos en datos para equipos de datos."
+  },
+  "faq": {
+    "eyebrow": "¿Preguntas?",
+    "subheading": "Todo lo que necesitas saber sobre Datics."
+  },
+  "cta": {
+    "badge": "Oferta por tiempo limitado",
+    "primary": "Comenzar gratis",
+    "secondary": "Agendar demostración",
+    "trust1": "Sin tarjeta de crédito requerida",
+    "trust2": "Prueba gratuita de 14 días",
+    "trust3": "Cancelar en cualquier momento"
+  },
+  "cases": {
+    "eyebrow": "Historias de éxito",
+    "heading": "Confiado por empresas líderes",
+    "subheading": "Descubre cómo las empresas transforman su estrategia de datos con Datics."
+  },
+  "how": {
+    "eyebrow": "Cómo funciona",
+    "heading": "Tres pasos simples hacia el dominio de datos",
+    "subheading": "Comienza en minutos con nuestra plataforma intuitiva."
+  },
+  "logos": {
+    "label": "Confiado por líderes de la industria"
+  },
+  "why": {
+    "body": "Datics combina IA de vanguardia con confiabilidad de nivel empresarial para entregar insights que generan un impacto comercial real.",
+    "cta": "Más información",
+    "eyebrow": "Por qué Datics",
+    "heading": "La plataforma construida para equipos de datos modernos",
+    "point1_body": "Descubre automáticamente tendencias y anomalías que tu equipo pasaría por alto.",
+    "point1_title": "Análisis impulsado por IA",
+    "point2_body": "Toma decisiones basadas en datos en vivo, no en reportes de ayer.",
+    "point2_title": "Insights en tiempo real",
+    "point3_body": "Encriptación de nivel bancario y cumplimiento con todos los estándares principales.",
+    "point3_title": "Seguridad empresarial",
+    "point4_body": "Conecta tus herramientas existentes en minutos con conectores preintegrados.",
+    "point4_title": "Integración sin fricciones"
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/",
+      "key": "home"
+    },
+    {
+      "label": "Services",
+      "href": "#services",
+      "key": "services"
+    },
+    {
+      "label": "How It Works",
+      "href": "#how-it-works",
+      "key": "howItWorks"
+    },
+    {
+      "label": "Case Studies",
+      "href": "#case-studies",
+      "key": "caseStudies"
+    },
+    {
+      "label": "Team",
+      "href": "#team",
+      "key": "team"
+    },
+    {
+      "label": "FAQ",
+      "href": "#faq",
+      "key": "faq"
+    },
+    {
+      "label": "Get Started →",
+      "href": "#cta",
+      "key": "getStarted"
+    }
+  ],
+  "stats": [
+    {
+      "value": "150+",
+      "label": "Projects Delivered",
+      "description": "across SaaS, fintech, healthtech, and e-commerce"
+    },
+    {
+      "value": "98%",
+      "label": "Client Satisfaction",
+      "description": "measured across every engagement since 2020"
+    },
+    {
+      "value": "40%",
+      "label": "Faster Time-to-Market",
+      "description": "compared to traditional in-house development cycles"
+    },
+    {
+      "value": "12×",
+      "label": "Average ROI",
+      "description": "reported by clients within 12 months of launch"
+    },
+    {
+      "value": "35",
+      "label": "AI Engineers",
+      "description": "senior specialists in LLMs, MLOps, and full-stack development"
+    }
+  ],
+  "how-it-works": [
+    {
+      "step": "01",
+      "title": "Discovery & Strategy",
+      "description": "We spend the first week deep-diving into your business model, user personas, and technical landscape. You leave with a detailed product spec, AI opportunity map, and project roadmap."
+    },
+    {
+      "step": "02",
+      "title": "Design & Prototyping",
+      "description": "Our designers produce high-fidelity Figma prototypes and interactive demos in under two weeks. You validate the experience before a single line of production code is written."
+    },
+    {
+      "step": "03",
+      "title": "Agile Development",
+      "description": "Engineering squads work in two-week sprints with daily standups, live staging environments, and weekly demos. You always know exactly where your product stands."
+    },
+    {
+      "step": "04",
+      "title": "Launch & Scale",
+      "description": "We handle deployment, CI/CD pipelines, monitoring, and post-launch optimization. Once live, our growth team identifies the next AI-powered feature to keep you ahead."
+    }
+  ],
+  "case-studies": [
+    {
+      "title": "NovaMed",
+      "subtitle": "AI Clinical Decision Support",
+      "description": "Built a HIPAA-compliant LLM-powered assistant for a US telehealth platform that surfaces differential diagnoses and drug interaction warnings in real time. Reduced physician documentation time by 34%.",
+      "tags": [
+        "Next.js",
+        "FastAPI",
+        "GPT-4",
+        "PostgreSQL",
+        "AWS"
+      ],
+      "image": "/images/novamed-clinical-ai-dashboard.jpg"
+    },
+    {
+      "title": "Fintrek",
+      "subtitle": "Intelligent Expense Intelligence",
+      "description": "Designed and shipped a personal finance app with an AI categorization engine and natural-language query interface. 80,000 users onboarded in the first 90 days.",
+      "tags": [
+        "React Native",
+        "Node.js",
+        "Plaid API",
+        "OpenAI",
+        "Supabase"
+      ],
+      "image": "/images/fintrek-personal-finance-app.jpg"
+    },
+    {
+      "title": "Cartex",
+      "subtitle": "Autonomous E-Commerce Merchandising",
+      "description": "Replaced manual product tagging and search ranking for a $40M GMV retailer with an ML pipeline that auto-tags 2M SKUs and personalizes search results per user. Conversion rate up 22%.",
+      "tags": [
+        "Python",
+        "Elasticsearch",
+        "PyTorch",
+        "GCP Vertex AI"
+      ],
+      "image": "/images/cartex-ecommerce-ml-platform.jpg"
+    },
+    {
+      "title": "Loopcast",
+      "subtitle": "AI Podcast Production Suite",
+      "description": "End-to-end SaaS platform for podcast creators featuring AI transcription, chapter generation, show-note writing, and clip extraction. Launched in 6 weeks.",
+      "tags": [
+        "Next.js",
+        "Whisper",
+        "GPT-4",
+        "FFmpeg",
+        "Vercel"
+      ],
+      "image": "/images/loopcast-podcast-ai-studio.jpg"
+    },
+    {
+      "title": "BuildIQ",
+      "subtitle": "Construction Project Intelligence",
+      "description": "Real-time project risk scoring and delay prediction for a construction management platform serving 300+ contractors. Reduced average project overrun by 18%.",
+      "tags": [
+        "React",
+        "Django",
+        "scikit-learn",
+        "Snowflake",
+        "Azure"
+      ],
+      "image": "/images/buildiq-construction-analytics.jpg"
+    },
+    {
+      "title": "Synapse LMS",
+      "subtitle": "Adaptive Learning Engine",
+      "description": "Personalized learning path engine for an EdTech startup that dynamically reorders curriculum based on learner performance signals. Completion rates improved by 41%.",
+      "tags": [
+        "Next.js",
+        "Python",
+        "Reinforcement Learning",
+        "MongoDB Atlas"
+      ],
+      "image": "/images/synapse-adaptive-learning-platform.jpg"
+    }
+  ],
+  "testimonials": [
+    {
+      "author": "Arjun Mehta",
+      "role": "CTO",
+      "company": "NovaMed",
+      "quote": "Datics AI didn't just build what we asked for — they challenged our assumptions, proposed a smarter architecture, and delivered a product that our clinical team actually loves. The LLM integration was flawless and the speed was unreal.",
+      "avatar": "/images/avatar-arjun-mehta.jpg"
+    },
+    {
+      "author": "Sarah Okonkwo",
+      "role": "Founder & CEO",
+      "company": "Fintrek",
+      "quote": "We'd been burned by two agencies before Datics. The difference was night and day. They understood fintech compliance, moved fast, and the AI categorization engine they built is genuinely our biggest competitive moat.",
+      "avatar": "/images/avatar-sarah-okonkwo.jpg"
+    },
+    {
+      "author": "Marcus Delgado",
+      "role": "VP of Engineering",
+      "company": "Cartex",
+      "quote": "I was skeptical that an external team could own something as core as our search and merchandising stack. Datics proved me wrong. The ML pipeline they built outperformed our internal prototype within the first sprint.",
+      "avatar": "/images/avatar-marcus-delgado.jpg"
+    },
+    {
+      "author": "Yuki Tanaka",
+      "role": "Co-Founder",
+      "company": "Loopcast",
+      "quote": "Six weeks from kickoff to production. I still can't believe it. The team was communicative, the design was stunning, and the AI features work better than anything I've seen from tools that have been around for years.",
+      "avatar": "/images/avatar-yuki-tanaka.jpg"
+    },
+    {
+      "author": "Priya Sharma",
+      "role": "Head of Product",
+      "company": "BuildIQ",
+      "quote": "The risk-scoring model Datics built has saved our clients millions in avoided delays. More importantly, they took the time to understand construction workflows before writing a single line of code. That domain empathy is rare.",
+      "avatar": "/images/avatar-priya-sharma.jpg"
+    },
+    {
+      "author": "Daniel Osei",
+      "role": "CEO",
+      "company": "Synapse LMS",
+      "quote": "Datics AI is the rare agency that thinks like a product company. They pushed back on features that wouldn't move the needle and doubled down on the adaptive engine that became our headline differentiator. Raised our Series A three months after launch.",
+      "avatar": "/images/avatar-daniel-osei.jpg"
+    }
+  ],
+  "footer": [
+    {
+      "label": "Custom Software Development",
+      "href": "#services",
+      "category": "services"
+    },
+    {
+      "label": "LLM Integration & Fine-Tuning",
+      "href": "#services",
+      "category": "services"
+    },
+    {
+      "label": "MLOps & AI Infrastructure",
+      "href": "#services",
+      "category": "services"
+    },
+    {
+      "label": "UI/UX Design Systems",
+      "href": "#services",
+      "category": "services"
+    },
+    {
+      "label": "About Us",
+      "href": "#team",
+      "category": "company"
+    },
+    {
+      "label": "Case Studies",
+      "href": "#case-studies",
+      "category": "company"
+    },
+    {
+      "label": "Team",
+      "href": "#team",
+      "category": "company"
+    },
+    {
+      "label": "Careers (We're Hiring!)",
+      "href": "#cta",
+      "category": "company"
+    },
+    {
+      "label": "Blog",
+      "href": "#",
+      "category": "resources"
+    },
+    {
+      "label": "AI Readiness Checklist",
+      "href": "#",
+      "category": "resources"
+    },
+    {
+      "label": "Open Source",
+      "href": "https://github.com/datics-ai",
+      "category": "resources"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "#",
+      "category": "legal"
+    },
+    {
+      "label": "Terms of Service",
+      "href": "#",
+      "category": "legal"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com/company/datics-ai",
+      "category": "social"
+    },
+    {
+      "label": "Twitter / X",
+      "href": "https://twitter.com/daticsai",
+      "category": "social"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/datics-ai",
+      "category": "social"
+    }
+  ]
+}
