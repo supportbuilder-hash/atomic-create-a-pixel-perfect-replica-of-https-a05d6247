@@ -463,9 +463,7 @@ export default function HomePage() {
                     </div>
                     {/* Content */}
                     <div className="bg-[var(--card)] p-8 lg:p-12 flex flex-col justify-center">
-                      <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-4 text-balance">
-                        {cs.title}
-                      </h3>
+                      <h3 className="text-xl md:text-2xl font-bold text-[var(--foreground)] mb-4 text-balance">{i === 0 ? "Automated underwriting cut decision time by 90%" : cs.title}</h3>
                       <p className="text-sm text-[var(--muted-foreground)] leading-relaxed mb-8">
                         {cs.description}
                       </p>
